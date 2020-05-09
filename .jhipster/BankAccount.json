@@ -1,0 +1,38 @@
+{
+    "name": "BankAccount",
+    "fields": [
+        {
+            "fieldName": "cards",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "currencyCode",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "contryCode",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "customer",
+            "otherEntityRelationshipName": "bankAccount",
+            "relationshipName": "customer",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200509072500",
+    "entityTableName": "bank_account",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "bankcart",
+    "applications": "*",
+    "microserviceName": "bankcart"
+}

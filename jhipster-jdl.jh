@@ -1,0 +1,36 @@
+
+entity BankAccount {
+    cards Integer,
+	currencyCode Integer,
+	contryCode Integer
+}
+entity Card {
+  cardId Integer,
+  customerId Integer,
+  accountId Integer,
+  cardType CardType,
+  cvc Integer,
+  password Integer
+} 
+entity Customer {
+   name String, 
+   address1 String,
+   address2 String,
+   state String,
+   city String, 
+   country String
+}
+
+enum CardType{
+  Debit,Credit
+}
+
+relationship OneToMany {
+	Customer to BankAccount
+}
+
+relationship ManyToOne {
+	Card{manager} to BankAccount
+}
+
+service all with serviceImpl 

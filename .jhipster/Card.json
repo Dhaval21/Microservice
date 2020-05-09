@@ -1,0 +1,51 @@
+{
+    "name": "Card",
+    "fields": [
+        {
+            "fieldName": "cardId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "customerId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "accountId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cardType",
+            "fieldType": "CardType",
+            "fieldValues": "Debit,Credit"
+        },
+        {
+            "fieldName": "cvc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "bankAccount",
+            "otherEntityRelationshipName": "card",
+            "relationshipName": "manager",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200509072600",
+    "entityTableName": "card",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "bankcart",
+    "applications": "*",
+    "microserviceName": "bankcart"
+}
