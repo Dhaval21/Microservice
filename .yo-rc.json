@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mycompany.myapp"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "microservice",
+    "baseName": "bankcart",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MjcxODFkNWNkNGRkOGRjZTIzYWNkZWMyNjRmNGYyNDMzOGY2MGFjNDkwYWY0ZDc4ZWZjNmMxMDNiNGQzYmQ0YTMzMTBhM2VhMTA1Yzc0OTRiODkzZDQzNDc3MzM4ZTY5NmM3ZTQ1NmExYzQxZTdmZGU3ODQwMjRhOTVkZTZkYjk=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1589002403852,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
